@@ -1,1 +1,112 @@
+Student Records Management System
+Description
 
+This Python program allows users to manage student records. It stores student names and grades for three subjects, calculates averages, displays records, searches for students, and updates student information.
+
+Features
+Add student records
+Validate grade input (0-100)
+Calculate student averages
+Display individual student details
+Display class summary
+Search for a student
+Update student grades
+Handle invalid numeric input
+Subjects
+
+The system records grades for:
+
+Maths
+Economics
+Statistics
+How the Program Works
+1. Add Students
+
+The user enters:
+
+Student name
+Maths grade
+Economics grade
+Statistics grade
+
+The program stores the information in a dictionary.
+
+2. Display Class Summary
+
+After all students are entered, the program displays:
+
+Student name
+Individual subject grades
+Average grade
+3. Search for a Student
+
+The user enters a student's name to view:
+
+Student details
+Grades
+Average score
+4. Update Student Records
+
+The user can:
+
+Search for an existing student
+Enter new grades
+Save the updated record
+5. Display Updated Records
+
+The updated class summary is displayed showing all changes.
+
+Data Structure Used
+Python
+section_d_students = {
+"Weno": {
+"Maths": 91,
+"Economics": 85,
+"Statistics": 78
+}
+}
+Input Validation
+
+The program ensures:
+
+Grades are numeric values.
+Grades are between 0 and 100.
+Invalid inputs are handled using try-except.
+Functions
+add_student()
+
+Adds a student and their grades.
+
+calculate_average(student_grades)
+
+Calculates and returns the average grade.
+
+display_student(student_name)
+
+Displays information for a specified student.
+
+display_summary()
+
+Displays all student records and averages.
+
+search_and_update()
+
+Searches for a student and updates their grades.
+
+Example Output
+Plain Text
+CLASS SUMMARY
+------------------------------------------------------------
+ 
+Name: Weno | Maths: 91 | Economics: 85 | Statistics: 78 | Average: 84.67
+ 
+Name: Glory | Maths: 66 | Economics: 72 | Statistics: 80 | Average: 72.67
+Author
+
+Student Records Management System developed in Python using:
+
+Dictionaries
+Functions
+Loops
+Conditional Statements
+Exception Handling (try-except)
